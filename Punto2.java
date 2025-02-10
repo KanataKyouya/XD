@@ -34,7 +34,7 @@ public class Punto2 {
             for (j = 0; j < matriz.length; j++){
 
                 if (matriz[i][j] > Mayor){
-
+                    
                     Mayor = matriz[i][j];
 
                 }
