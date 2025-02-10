@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Metodos {
 
+    public static void main(String[] args) {
+        
+    }
+
     public int SolicitarDimension(){
 
         Scanner sc = new Scanner(System.in);
