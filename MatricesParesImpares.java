@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class MatricesParesImpares {
     
+    static Metodos met = new Metodos();
     public static void main(String[] args) {
         
         Proceso();
@@ -10,14 +11,14 @@ public class MatricesParesImpares {
 
     private static void Proceso(){
 
-        int n = SolicitarDimension();
+        int n = met.SolicitarDimension();
         int[][] matriz = new int[n][n];
 
-        matriz = LlenarMatriz(n);
+        matriz = met.LlenarMatriz(n);
 
-        LeerMatriz(matriz, n);
+        met.LeerMatriz(matriz, n);
 
-        ParesImpares(n, matriz);
+        met.ParesImpares(n, matriz);
     }
 
 }
