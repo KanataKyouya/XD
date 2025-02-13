@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Punto1 {
     
     static Metodos met = new Metodos();

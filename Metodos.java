@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class Metodos {
-
+    
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         
     }
 
     public int SolicitarDimension(){
-
-        Scanner sc = new Scanner(System.in);
+        
         int d = 0;
         System.out.println("Ingrese la dimensión de la matriz: ");
         d = sc.nextInt();
@@ -88,5 +88,30 @@ public class Metodos {
         System.out.println(pares + "\n" + impares);
 
     }
+
+    public int SolicitarPunto(){
+
+        int punto;
+
+        System.out.println("¿Que punto desea realizar?\n " +
+                            "1- Generar matriz nxn\n " +
+                            "2- Posicion del numero mayor de la matriz\n " +
+                            "3- Sumas de filas y columnas\n " +
+                            "4- Mayor suma de columnas\n" +
+                            "5- Matriz a vector\n" +
+                            "6- Salir");
+        punto = sc.nextInt();
+
+        if (punto < 1 || punto > 6){
+
+            System.out.println("Punto no valido, debe estar entre 1 y 6");
+
+            return SolicitarPunto();
+        }
+
+        return punto;
+   
+    }
+
 
 }

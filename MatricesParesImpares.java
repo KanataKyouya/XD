@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class MatricesParesImpares {
     
     static Metodos met = new Metodos();
